@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sego Pecel Mbah Yam</title>
+
+    <!-- Favicon Logo -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Link ke File CSS Eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="assets/images/logo.png" class="dot" alt="Logo"
+                onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='grid';">
+            <span class="dot fallback-emoji" id="logoFallback">🍚</span>
+            Sego Pecel <span>Mbah Yam</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero" id="home">
+        <div class="hero-slides" id="heroSlides">
+            <!-- HERO: Pakai SGPC 1-4 -->
+            <div class="slide active" style="background-image: url('assets/images/sgpc1.png');"></div>
+            <div class="slide" style="background-image: url('assets/images/sgpc2.png');"></div>
+            <div class="slide" style="background-image: url('assets/images/sgpc3.png');"></div>
+            <div class="slide" style="background-image: url('assets/images/sgpc4.png');"></div>
+        </div>
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+
+        <div class="hero-content">
+            <span class="hero-badge">Cita Rasa Jawa Autentik</span>
+            <h1>Sego Pecel <em>Mbah Yam</em></h1>
+            <p>Nikmati semangkuk kehangatan tradisi — nasi, sayur segar, dan bumbu pecel warisan resep turun-temurun
+                yang menggugah selera.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+                <a href="#about" class="btn btn-outline">Tentang Kami</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+    </header>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="section-head reveal">
+            <span class="section-tag">Tentang Kami</span>
+            <h2>Sego Pecel Mbah Yam <em>Sejak 1971</em></h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-img-wrap reveal">
+
+                <div class="about-slider" id="aboutSlider">
+                    <!-- ABOUT: Pakai HERO 1-4 -->
+                    <div class="about-slide active" style="background-image: url('assets/images/hero1.png');"></div>
+                    <div class="about-slide" style="background-image: url('assets/images/hero2.png');"></div>
+                    <div class="about-slide" style="background-image: url('assets/images/hero3.png');"></div>
+                    <div class="about-slide" style="background-image: url('assets/images/hero4.png');"></div>
+
+                    <button class="about-arrow prev" id="aboutPrev" aria-label="Sebelumnya">‹</button>
+                    <button class="about-arrow next" id="aboutNext" aria-label="Selanjutnya">›</button>
+
+                    <div class="about-dots" id="aboutDots">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="about-badge">
+                    <strong>35+</strong>
+                    <span>TAHUN BERKARYA</span>
+                </div>
+            </div>
+
+            <div class="about-text reveal">
+                <h3>Bukan Sekadar Pecel, Ini Cerita Keluarga</h3>
+                <p>Sego Pecel Mbah Yam adalah usaha kuliner penyedia hidangan tradisional khas Jawa yang berfokus pada
+                    keotentikan rasa, kualitas bahan terbaik, dan kehangatan cita rasa nusantara. Berdiri dengan
+                    komitmen melestarikan resep warisan, Sego Pecel Mbah Yam menyajikan racikan bumbu pecel khas yang
+                    kaya rempah, dipadukan dengan racikan sayuran segar pilihan serta beragam lauk pauk tradisional.</p>
+                <p>Kami melayani santap langsung di outlet (dine-in & take-away), pemesanan katering acara, hingga
+                    pasokan porsi besar (bulk order) untuk kebutuhan instansi, perusahaan, maupun acara keluarga.</p>
+
+                <div class="about-stats">
+                    <div class="stat"><strong>35+</strong><span>TAHUN PENGALAMAN</span></div>
+                    <div class="stat"><strong>12K+</strong><span>PELANGGAN SETIA</span></div>
+                    <div class="stat"><strong>4.9</strong><span>RATING BINTANG</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section id="menu">
+        <div class="section-head reveal">
+            <span class="section-tag">Pilihan Menu</span>
+            <h2>Menu <em>Favorit</em> Kami</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu1.jpg');"></div>
+                    <span class="menu-num">01</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Sego Pecel</h4>
+                    <p>Nasi hangat dengan siraman bumbu pecel khas Mbah Yam yang gurih, manis, dan kaya rasa. Disajikan
+                        bersama aneka sayuran segar dan pelengkap pilihan yang bikin setiap suapan terasa istimewa.</p>
+                    <div class="menu-price">Rp 25.000 <small>/ porsi</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu2.jpg');"></div>
+                    <span class="menu-num">02</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Nasi Iga Bakar</h4>
+                    <p>Nasi iga bakar sapi empuk dengan Sambel Korek bumbu meresap hingga ke dalam, dibakar sempurna
+                        untuk menghadirkan aroma smoky yang menggoda. Nikmati perpaduan rasa manis, gurih, dan sedikit
+                        karamel di setiap gigitan.</p>
+                    <div class="menu-price">Rp 85.000 <small>/ porsi</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu3.jpg');"></div>
+                    <span class="menu-num">03</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Nasi Rawon</h4>
+                    <p>Rawon khas Jawa Timur yang kaya rempah, berpadu dengan potongan daging sapi empuk dan nasi
+                        hangat. Cita rasa autentik yang dalam dan menghangatkan, seperti masakan rumahan penuh kenangan.
+                    </p>
+                    <div class="menu-price">Rp 55.000 <small>/ porsi</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu4.jpg');"></div>
+                    <span class="menu-num">04</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Nasi Ayam Kampung</h4>
+                    <p>Nasi hangat dengan ayam kampung goreng yang gurih dan renyah, dipadukan dengan urap segar serta
+                        sambal korek yang pedas menggugah selera. Sajian sederhana dengan cita rasa khas rumahan yang
+                        nikmat.</p>
+                    <div class="menu-price">Rp 55.000 <small>/ porsi</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu5.jpg');"></div>
+                    <span class="menu-num">05</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Nasi Soto Ceker</h4>
+                    <p>Kuah bening yang gurih dan segar, dipadukan dengan ceker ayam empuk yang kaya rasa. Disajikan
+                        hangat dengan pelengkap pilihan untuk menemani momen makan yang nyaman dan memuaskan.</p>
+                    <div class="menu-price">Rp 30.000 <small>/ porsi</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu6.jpg');"></div>
+                    <span class="menu-num">06</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Chicken Wings</h4>
+                    <p>Sayap ayam berbumbu original pilihan yang digoreng hingga keemasan, renyah di luar dan juicy di
+                        dalam.</p>
+                    <div class="menu-price">Rp 30.000 <small>/ porsi</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu7.jpg');"></div>
+                    <span class="menu-num">07</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Telur Ceplok</h4>
+                    <p>Telur ceplok matang sempurna, cocok jadi lauk tambahan nasi Anda.</p>
+                    <div class="menu-price">Rp 7.000 <small>/ pcs</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu8.jpg');"></div>
+                    <span class="menu-num">08</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Es Teh Manis</h4>
+                    <p>Es teh manis segar dengan teh pilihan, manisnya pas menemani makan.</p>
+                    <div class="menu-price">Rp 8.000 <small>/ gelas</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu9.jpg');"></div>
+                    <span class="menu-num">09</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Es Jeruk</h4>
+                    <p>Perasan jeruk segar dengan es batu, segar dan menyehatkan.</p>
+                    <div class="menu-price">Rp 12.000 <small>/ gelas</small></div>
+                </div>
+            </div>
+
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <div class="menu-img" style="background-image: url('assets/images/menu10.jpg');"></div>
+                    <span class="menu-num">10</span>
+                </div>
+                <div class="menu-body">
+                    <h4>Es Cendol</h4>
+                    <p>Cendol kenyal dengan kuah santan manis dan gula jawa, segar khas tradisional.</p>
+                    <div class="menu-price">Rp 15.000 <small>/ gelas</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONI ===== -->
+    <section id="testimoni">
+        <div class="section-head reveal">
+            <span class="section-tag">Testimoni</span>
+            <h2>Kata <em>Mereka</em></h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="testi-grid">
+            <div class="testi-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>pecelnya enak, peyeknya gurih, porsi juga bikin kenyang dengan harga segitu worth it, tempatnya juga
+                    bersih dan adem sehingga nyaman untuk makan bersama keluarga, lokasi strategis dan parkir
+                    mobil/motor tersedia banyak</p>
+                <div class="testi-author">
+                    <div class="avatar">A</div>
+                    <div><strong>Aditya Damar Purnomo</strong><small>Pelanggan</small></div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>Nasi pecelnya enak, pas rasa bumbunya pedas manis, khas jateng-jatim. Staf ramah, Suasan ok.</p>
+                <div class="testi-author">
+                    <div class="avatar">A</div>
+                    <div><strong>Anugrah Wirawan</strong><small>Pelanggan</small></div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>Suka banget sego pecelnya, bahkan ga perlu tambah gorengan / sides juga udah enak banget! Tempe
+                    mendoannya enak 😋 Porsinya banyakk, kenyang banget, puas!</p>
+                <div class="testi-author">
+                    <div class="avatar">T</div>
+                    <div><strong>Toro</strong><small>Pelanggan</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KONTAK ===== -->
+    <section id="kontak">
+        <div class="section-head reveal">
+            <span class="section-tag">Hubungi Kami</span>
+            <h2>Mampir &amp; <em>Nikmati</em></h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="kontak-wrap">
+            <div class="kontak-info reveal">
+                <h3>Kami Tunggu Kedatanganmu</h3>
+                <p>Punya pertanyaan, ingin pesan dalam jumlah besar, atau sekadar ingin menyapa? Hubungi kami lewat
+                    kontak di bawah ini.</p>
+
+                <div class="info-item">
+                    <div class="ico">📍</div>
+                    <div><strong>Alamat</strong><span>Soho Botany Garden No 39 dan 50 Jl. Komp, Jl. RS. Fatmawati Raya
+                            Jl. Botany Hills No39 dan 50, RT.3/RW.9, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan,
+                            Daerah Khusus Ibukota Jakarta 12340</span></div>
+                </div>
+                <div class="info-item">
+                    <div class="ico">📞</div>
+                    <div><strong>Telepon / WhatsApp</strong><span>081110121061</span></div>
+                </div>
+                <div class="info-item">
+                    <div class="ico">🕐</div>
+                    <div><strong>Jam Buka</strong><span>Setiap hari, 06.30 – 20.00 WIB</span></div>
+                </div>
+
+                <!-- TAMBAHAN: INSTAGRAM DI BAGIAN KONTAK -->
+                <div class="info-item">
+                    <div class="ico">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="color: var(--gold);">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Instagram</strong>
+                        <span>
+                            <a href="https://www.instagram.com/sgpcmbahyam/" target="_blank"
+                                style="color: #c4b5d9; text-decoration: none; transition: 0.3s;"
+                                onmouseover="this.style.color='var(--gold)'"
+                                onmouseout="this.style.color='#c4b5d9'">@sgpcmbahyam</a>
+                        </span>
+                    </div>
+                </div>
+                <!-- AKHIR TAMBAHAN -->
+
+            </div>
+
+            <form class="kontak-form reveal"
+                onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah kami terima.'); this.reset();">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Alamat Email" required>
+                <textarea placeholder="Tulis pesan Anda..." required></textarea>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="logo">
+            <img src="assets/images/logo.png" class="dot" alt="Logo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <span class="dot fallback-emoji" style="display: none;">🍚</span>
+            Sego Pecel <span>Mbah Yam</span>
+        </div>
+        <p>&copy; 2025 Sego Pecel Mbah Yam. Dibuat dengan ❤️ untuk pecinta kuliner tradisional.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+
+    <!-- Link ke File JavaScript Eksternal -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
