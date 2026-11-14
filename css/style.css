@@ -993,6 +993,22 @@ footer a {
     text-decoration: none;
 }
 
+/* ===== TAMBAHAN: STYLING SERTIFIKAT HALAL DI FOOTER ===== */
+.halal-certification {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.halal-certification img {
+    height: 70px !important;
+    width: auto !important;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 /* ===== BACK TO TOP ===== */
 .to-top {
     position: fixed;
@@ -1067,5 +1083,9 @@ footer a {
 
     section {
         padding: 80px 6%;
+    }
+
+    .halal-certification img {
+        height: 55px !important;
     }
 }
